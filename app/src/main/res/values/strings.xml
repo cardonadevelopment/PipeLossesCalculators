@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+
+    <string-array name="Fluids">
+        <item>Water</item>
+        <item>Oil</item>
+        <item>Alcohol, methyl</item>
+    </string-array>
+
+    <string-array name="flowRegime">
+        <item>Laminar</item>
+        <item>Transition</item>
+        <item>Turbulent</item>
+    </string-array>
+
+    <string-array name="MaterialList">
+        <item>Smooth tube</item>
+        <item>Steel</item>
+        <item>Stainless steel</item>
+        <item>Glass</item>
+        <item>Plastic</item>
+        <item>Wood</item>
+        <item>Rubber smoothed</item>
+        <item>Copper</item>
+        <item>Brass</item>
+        <item>Cast iron</item>
+        <item>Galvanized iron</item>
+        <item>Wrought iron</item>
+        <item>Concrete</item>
+    </string-array>
+
+    <string-array name="Diameter">
+        <item>1/8</item>
+        <item>1/4</item>
+        <item>3/8</item>
+        <item>1/2</item>
+        <item>3/4</item>
+        <item>1</item>
+        <item>1 1/4</item>
+        <item>1 1/2</item>
+        <item>2</item>
+        <item>2 1/2</item>
+        <item>3</item>
+        <item>3 1/2</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="AccessorieslList">
+        <item>Globe valve fully opened</item>
+        <item>Angle valve fully opened</item>
+        <item>Gate valve fully opened</item>
+        <item>Gate valve 3/4 opened</item>
+        <item>Gate valve 1/2 opened</item>
+        <item>Gate valve 1/4 opened</item>
+        <item>Check valve (swing)</item>
+        <item>Check valve (ball)</item>
+        <item>Butterfly valve fully opened (2~8 in)</item>
+        <item>Butterfly valve fully opened (10~14 in)</item>
+        <item>Butterfly valve fully opened (16~24 in)</item>
+        <item>Foot valve (poppet disc)</item>
+        <item>Foot valve (hinged disc)</item>
+        <item>90° standard elbow</item>
+        <item>90° long radius elbow</item>
+        <item>90° street (threaded) elbow</item>
+        <item>45° standard elbow</item>
+        <item>45° street (threaded) elbow</item>
+        <item>Close return bend</item>
+        <item>Standard Tee -flow through run-</item>
+        <item>Standard Tee -flow through branch-</item>
+    </string-array>
+
+    <string-array name="LDequivalentList">
+        <item>340</item>
+        <item>150</item>
+        <item>8</item>
+        <item>35</item>
+        <item>160</item>
+        <item>900</item>
+        <item>100</item>
+        <item>150</item>
+        <item>45</item>
+        <item>35</item>
+        <item>25</item>
+        <item>420</item>
+        <item>75</item>
+        <item>30</item>
+        <item>20</item>
+        <item>50</item>
+        <item>16</item>
+        <item>26</item>
+        <item>50</item>
+        <item>20</item>
+        <item>60</item>
+    </string-array>
+
+
+    <string name="app_name">Pipe losses calculator</string>
+    <string name="accessoriesLabel">Accessories</string>
+    <string name="numberOfAccessoriesLabel">Number of accessories</string>
+    <string name="action_settings">About this app</string>
+    <string name="addButtonLabel">Add accessory</string>
+    <string name="eraseButtonLabel">Erase</string>
+    <string name="minorLosses">Minor Losses</string>
+    <string name="majorLosses">Major Losses</string>
+    <string name="totalLosses">Total Losses </string>
+    <string name="totalLosseskW">Total Losses power</string>
+    <string name="flowRegime">Regime</string>
+    <string name="flowRegimeInitValue">Turbulent</string>
+    <string name="fluidLabel">Fluid</string>
+    <string name="frictionFactor">Friction factor</string>
+    <string name="geometryLabel">Basic info</string>
+    <string name="imageDescription">Profile</string>
+    <string name="meanVelocityLabel">Mean velocity</string>
+    <string name="massFlowLabel">Mass flow</string>
+    <string name="fluidDensity">Density</string>
+    <string name="title_activity_settings">Settings</string>
+    <string name="tubeLengthLabel">Pipe length</string>
+    <string name="volumetricFlowLabel">Volumetric flow</string>
+    <string name="innerDiameterLabel">Nominal diameter</string>
+    <string name="materialLabel">Material</string>
+    <string name="ReynoldsLabel" translatable="false">Reynolds</string>
+    <string name="fluidKinematicViscosity">Kinematic viscosity</string>
+    <string name="pref_showOptions">Results</string>
+    <string name="action_licenses">About this app</string>
+    <string name="helpTitle">About this app</string>
+    <string name="tubeLengthInitValue" translatable="false">1 m</string>
+    <string name="massFlowInitValue" translatable="false">1 kg/s</string>
+    <string name="volumetricFlowInitValue" translatable="false">1 m³/s</string>
+    <string name="meanVelocityInitValue" translatable="false">1 m/s</string>
+    <string name="ReynoldsInitValue" translatable="false">1000</string>
+    <string name="frictionFactorInitValue" translatable="false">0.001</string>
+    <string name="fluidKinematicViscosityInitValue" translatable="false">0.001 m²/s</string>
+    <string name="fluidDensityInitValue" translatable="false">997 kg/m²</string>
+    <string name="minorLossesInitValue" translatable="false">0 m</string>
+    <string name="majorLossesInitValue" translatable="false">0 m</string>
+    <string name="totalLossesInitValue" translatable="false">0 m</string>
+    <string name="totalLosseskWInitValue" translatable="false">0 kW</string>
+    <string name="totalLossesHPInitValue" translatable="false">0 HP</string>
+    <string name="resultsLabel">Results</string>
+
+</resources>

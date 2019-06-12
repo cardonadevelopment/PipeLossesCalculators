@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="Fluids">
+        <item>Agua</item>
+        <item>Aceite</item>
+        <item>Alcohol metílico</item>
+    </string-array>
+
+    <string-array name="flowRegime">
+        <item>Laminar</item>
+        <item>Transición</item>
+        <item>Turbulento</item>
+    </string-array>
+
+    <string-array name="MaterialList">
+        <item>Tubo liso</item>
+        <item>Acero</item>
+        <item>Acero inoxidable</item>
+        <item>Vidrio</item>
+        <item>Plástico</item>
+        <item>Madera</item>
+        <item>Caucho</item>
+        <item>Cobre</item>
+        <item>Latón</item>
+        <item>Hierro fundido</item>
+        <item>Hierro galvanizado</item>
+        <item>Hierro forjado</item>
+        <item>Concreto</item>
+    </string-array>
+
+
+    <string-array name="AccessorieslList">
+        <item>Válvula de globo 100% abierta</item>
+        <item>Válvula de ángulo 100% abierta</item>
+        <item>Válvula de compuerta 100% abierta</item>
+        <item>Válvula de compuerta 3/4 abierta</item>
+        <item>Válvula de compuerta 1/2 abierta</item>
+        <item>Válvula de compuerta 1/4 abierta</item>
+        <item>Válvula antirretorno (giratoria)</item>
+        <item>Válvula antirretorno (bola)</item>
+        <item>Válvula mariposa 100% abierta (2~8 in)</item>
+        <item>Válvula mariposa 100% abierta 10~14 in)</item>
+        <item>Válvula mariposa 100% abierta (16~24 in)</item>
+        <item>Válvula de pie (disco de vástago)</item>
+        <item>Válvula de pie (disco de bisagra)</item>
+        <item>Codo estándar a 90°</item>
+        <item>Codo a 90° de radio largo</item>
+        <item>Codo roscado a 90°</item>
+        <item>Codo estándar a 45°</item>
+        <item>Codo roscado a 45°</item>
+        <item>Vuelta cerrada en retorno</item>
+        <item>T estándar -flujo directo-</item>
+        <item>T estándar -flujo por el ramal-</item>
+    </string-array>
+
+    <string name="app_name">Calculadora de pérdidas en tubos</string>
+    <string name="accessoriesLabel">Accesorios</string>
+    <string name="action_licenses">Sobre esta app</string>
+    <string name="action_settings">Sobre esta app</string>
+    <string name="addButtonLabel">Añadir accesorio</string>
+    <string name="eraseButtonLabel">Borrar</string>
+    <string name="flowRegime">Régimen</string>
+    <string name="flowRegimeInitValue">Turbulento</string>
+    <string name="fluidDensity">Densidad</string>
+    <string name="fluidKinematicViscosity">Viscosidad cinemática</string>
+    <string name="fluidLabel">Fluido</string>
+    <string name="frictionFactor" translatable="false">Factor de fricción</string>
+    <string name="geometryLabel">Información básica</string>
+    <string name="helpTitle" translatable="false">Acerca de esta app</string>
+    <string name="innerDiameterLabel">Diámetro nominal</string>
+    <string name="majorLosses">Pérdidas mayores</string>
+    <string name="massFlowLabel">Flujo másico</string>
+    <string name="materialLabel">Material</string>
+    <string name="meanVelocityLabel">Velocidad media</string>
+    <string name="minorLosses">Pérdidas menores</string>
+    <string name="numberOfAccessoriesLabel">Número de accesorios</string>
+    <string name="pref_header_general">General</string>
+    <string name="pref_header_limits">Límites</string>
+    <string name="pref_showOptions">Resultados</string>
+    <string name="resultsLabel">Resultados</string>
+    <string name="title_activity_settings">Opciones</string>
+    <string name="totalLosses">Pérdidas totales</string>
+    <string name="totalLosseskW">Pérdidas totales (kW/hp)</string>
+    <string name="tubeLengthLabel">Longitud de tubo</string>
+    <string name="volumetricFlowLabel">Caudal</string>
+</resources>

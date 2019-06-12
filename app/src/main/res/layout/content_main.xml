@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="co.edu.itm.pipelosses.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:columnCount="4"
+        android:paddingBottom="15dp"
+        android:rowCount="70">
+
+
+        <TextView
+            android:id="@+id/geometryLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center_horizontal"
+            android:layout_row="1"
+            android:padding="4dp"
+            android:text="@string/geometryLabel"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="24sp" />
+
+
+
+        <!-- Diameter d input parameters -->
+
+        <TextView
+            android:id="@+id/innerDiameterLabelTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="5"
+            android:padding="4dp"
+            android:text="@string/innerDiameterLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Spinner
+            android:id="@+id/diameterSpinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="5"
+            android:textAlignment="center" />
+
+        <!-- Material input -->
+
+        <TextView
+            android:id="@+id/materialLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="10"
+            android:padding="4dp"
+            android:text="@string/materialLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Spinner
+            android:id="@+id/spinnerMaterial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="10"
+            android:textAlignment="center" />
+
+
+        <TextView
+            android:id="@+id/fluidLabelTextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="11"
+            android:padding="4dp"
+            android:text="@string/fluidLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <Spinner
+            android:id="@+id/spinnerFluido"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="11"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/LengthTubeLabeltextview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="14"
+            android:padding="4dp"
+            android:text="@string/tubeLengthLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        <EditText
+            android:id="@+id/tubeLengthEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="14"
+            android:layout_column="1"
+            android:digits="0123456798."
+            android:inputType="number"
+            android:padding="4dp"
+            android:text="@string/tubeLengthInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+               <!-- volumetricFlow -->
+        <TextView
+            android:id="@+id/volumetricFlowLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="15"
+            android:padding="4dp"
+            android:text="@string/volumetricFlowLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/volumetricFlowEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="15"
+            android:layout_column="1"
+            android:digits="0123456798."
+            android:inputType="number"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:text="0.0001 m³/s"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/volumetricFlowGPMTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="16"
+            android:layout_column="1"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:text="1.585 GPM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/volumetricFlowLPMTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="17"
+            android:layout_column="1"
+            android:paddingLeft="4dp"
+            android:paddingBottom="10dp"
+            android:singleLine="true"
+            android:text="6 LPM"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_row="17"
+            android:layout_columnSpan="4"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- Accessories -->
+        <TextView
+            android:id="@+id/accessoriesLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="19"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:padding="4dp"
+            android:text="@string/accessoriesLabel"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="24sp" />
+
+        <Spinner
+            android:id="@+id/spinnerAccessories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="20"
+            android:layout_columnSpan="4"
+            android:textAlignment="center" />
+
+        <!-- Number of accessories -->
+        <TextView
+            android:id="@+id/numberOfAccessoriesLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="21"
+            android:padding="4dp"
+            android:text="@string/numberOfAccessoriesLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <EditText
+            android:id="@+id/numberOfAccessoriesEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="21"
+            android:layout_column="1"
+            android:inputType="number"
+            android:padding="4dp"
+            android:singleLine="true"
+            android:digits="0123456798"
+            android:text="1"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="25"
+            android:layout_column="0"
+            android:text="@string/addButtonLabel"/>
+
+        <Button
+            android:id="@+id/eraseButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="25"
+            android:layout_column="1"
+            android:text="@string/eraseButtonLabel"/>
+
+        <TextView
+            android:id="@+id/fullAccessoriesListTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="26"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center_horizontal"
+            android:textAlignment="center"
+            android:maxLines="22"
+            android:paddingLeft="4dp"
+            android:paddingBottom="10dp"
+            android:text="" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_row="30"
+            android:layout_columnSpan="4"
+            android:layout_marginEnd="10dp"
+            android:background="@android:color/darker_gray" />
+
+        <!-- RESULTS -->
+
+        <TextView
+            android:id="@+id/resultsLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="31"
+            android:layout_column="0"
+            android:layout_columnSpan="4"
+            android:layout_gravity="center_horizontal"
+            android:paddingLeft="4dp"
+            android:paddingTop="10dp"
+            android:text="@string/resultsLabel"
+            android:textAlignment="center"
+            android:textAppearance="@style/TextAppearance.AppCompat.Title"
+            android:textSize="24sp" />
+
+        <!-- massFlow -->
+        <TextView
+            android:id="@+id/massFlowLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="32"
+            android:padding="4dp"
+            android:text="@string/massFlowLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/massFlowTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="32"
+            android:padding="4dp"
+            android:text="@string/massFlowInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+
+        <!-- meanVelocity -->
+        <TextView
+            android:id="@+id/meanVelocityLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="33"
+            android:padding="4dp"
+            android:text="@string/meanVelocityLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/meanVelocityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="33"
+            android:padding="4dp"
+            android:text="@string/meanVelocityInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- Reynolds -->
+        <TextView
+            android:id="@+id/ReynoldsLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="34"
+            android:layout_column="0"
+            android:padding="4dp"
+            android:text="@string/ReynoldsLabel"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/ReynoldsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="34"
+            android:padding="4dp"
+            android:text="@string/ReynoldsInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- flowRegime -->
+        <TextView
+            android:id="@+id/flowRegimeLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="35"
+            android:padding="4dp"
+            android:text="@string/flowRegime"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/flowRegimeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="35"
+            android:padding="4dp"
+            android:text="@string/flowRegimeInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- frictionFactor -->
+        <TextView
+            android:id="@+id/frictionFactorLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="36"
+            android:padding="4dp"
+            android:text="@string/frictionFactor"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/frictionFactorTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="36"
+            android:layout_column="1"
+            android:padding="4dp"
+            android:text="@string/frictionFactorInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+        <!-- Fluid properties result -->
+       <!-- fluidKinematicViscosity -->
+        <TextView
+            android:id="@+id/fluidKinematicViscosityLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="55"
+            android:padding="4dp"
+            android:text="@string/fluidKinematicViscosity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/fluidKinematicViscosityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="55"
+            android:padding="4dp"
+            android:text="@string/fluidKinematicViscosityInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- fluidDensity -->
+        <TextView
+            android:id="@+id/fluidDensityLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="56"
+            android:padding="4dp"
+            android:text="@string/fluidDensity"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/fluidDensityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="56"
+            android:padding="4dp"
+            android:text="@string/fluidDensityInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- minorLosses -->
+        <TextView
+            android:id="@+id/minorLossesLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="57"
+            android:padding="4dp"
+            android:text="@string/minorLosses"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/minorLossesValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="57"
+            android:padding="4dp"
+            android:text="@string/minorLossesInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- majorLosses -->
+        <TextView
+            android:id="@+id/majorLossesLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="58"
+            android:padding="4dp"
+            android:text="@string/majorLosses"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/majorLossesValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="58"
+            android:padding="4dp"
+            android:text="@string/majorLossesInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+
+        <!-- totalLosses (m)-->
+        <TextView
+            android:id="@+id/totalLossesLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="59"
+            android:padding="4dp"
+            android:text="@string/totalLosses"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/totalLossesValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="59"
+            android:padding="4dp"
+            android:text="@string/totalLossesInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <!-- totalLosses (kW)-->
+        <TextView
+            android:id="@+id/totalLosseskWLabelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="60"
+            android:padding="4dp"
+            android:text="@string/totalLosseskW"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/totalLosseskWValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="60"
+            android:padding="4dp"
+            android:text="@string/totalLosseskWInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        <TextView
+            android:id="@+id/totalLossesHPValueTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="61"
+            android:padding="4dp"
+            android:text="@string/totalLossesHPInitValue"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+
+    </GridLayout>
+
+    </androidx.core.widget.NestedScrollView>
